@@ -47,7 +47,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -109,10 +109,16 @@
     <property name="title">
      <string>Настройки</string>
     </property>
+    <addaction name="action"/>
    </widget>
    <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Тест</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

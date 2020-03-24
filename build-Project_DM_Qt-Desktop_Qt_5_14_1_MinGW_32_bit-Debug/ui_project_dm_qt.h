@@ -26,9 +26,10 @@ QT_BEGIN_NAMESPACE
 class Ui_Project_DM_Qt
 {
 public:
+    QAction *action;
     QWidget *centralwidget;
     QFrame *frame;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton_natural;
     QPushButton *pushButton_integer;
@@ -51,6 +52,8 @@ public:
         Project_DM_Qt->setSizePolicy(sizePolicy);
         Project_DM_Qt->setMinimumSize(QSize(1100, 800));
         Project_DM_Qt->setMaximumSize(QSize(1100, 800));
+        action = new QAction(Project_DM_Qt);
+        action->setObjectName(QString::fromUtf8("action"));
         centralwidget = new QWidget(Project_DM_Qt);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         frame = new QFrame(centralwidget);
@@ -58,33 +61,33 @@ public:
         frame->setGeometry(QRect(0, 700, 1101, 61));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
-        widget = new QWidget(frame);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 10, 1081, 41));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(frame);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 1081, 41));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton_natural = new QPushButton(widget);
+        pushButton_natural = new QPushButton(layoutWidget);
         pushButton_natural->setObjectName(QString::fromUtf8("pushButton_natural"));
 
         horizontalLayout->addWidget(pushButton_natural);
 
-        pushButton_integer = new QPushButton(widget);
+        pushButton_integer = new QPushButton(layoutWidget);
         pushButton_integer->setObjectName(QString::fromUtf8("pushButton_integer"));
 
         horizontalLayout->addWidget(pushButton_integer);
 
-        pushButton_rational = new QPushButton(widget);
+        pushButton_rational = new QPushButton(layoutWidget);
         pushButton_rational->setObjectName(QString::fromUtf8("pushButton_rational"));
 
         horizontalLayout->addWidget(pushButton_rational);
 
-        pushButton_polynomials = new QPushButton(widget);
+        pushButton_polynomials = new QPushButton(layoutWidget);
         pushButton_polynomials->setObjectName(QString::fromUtf8("pushButton_polynomials"));
 
         horizontalLayout->addWidget(pushButton_polynomials);
 
-        pushButton_matrix = new QPushButton(widget);
+        pushButton_matrix = new QPushButton(layoutWidget);
         pushButton_matrix->setObjectName(QString::fromUtf8("pushButton_matrix"));
 
         horizontalLayout->addWidget(pushButton_matrix);
@@ -101,6 +104,7 @@ public:
         Project_DM_Qt->setStatusBar(statusbar);
 
         menubar->addAction(menu->menuAction());
+        menu->addAction(action);
 
         retranslateUi(Project_DM_Qt);
 
@@ -110,6 +114,7 @@ public:
     void retranslateUi(QMainWindow *Project_DM_Qt)
     {
         Project_DM_Qt->setWindowTitle(QCoreApplication::translate("Project_DM_Qt", "Project_DM_Qt", nullptr));
+        action->setText(QCoreApplication::translate("Project_DM_Qt", "\320\242\320\265\321\201\321\202", nullptr));
         pushButton_natural->setText(QCoreApplication::translate("Project_DM_Qt", "\320\235\320\260\321\202\321\203\321\200\320\260\320\273\321\214\320\275\321\213\320\265 \321\207\320\270\321\201\320\273\320\260 N", nullptr));
         pushButton_integer->setText(QCoreApplication::translate("Project_DM_Qt", "\320\246\320\265\320\273\321\213\320\265 \321\207\320\270\321\201\320\273\320\260 Z", nullptr));
         pushButton_rational->setText(QCoreApplication::translate("Project_DM_Qt", "\320\240\320\260\321\206\320\270\320\276\320\275\320\260\320\273\321\214\320\275\321\213\320\265 \321\207\320\270\321\201\320\273\320\260 Q", nullptr));

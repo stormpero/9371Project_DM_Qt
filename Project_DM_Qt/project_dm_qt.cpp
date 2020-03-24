@@ -1,5 +1,7 @@
 #include "project_dm_qt.h"
 #include "ui_project_dm_qt.h"
+#include "natural.h"
+
 
 Project_DM_Qt::Project_DM_Qt(QWidget *parent)
     : QMainWindow(parent)
