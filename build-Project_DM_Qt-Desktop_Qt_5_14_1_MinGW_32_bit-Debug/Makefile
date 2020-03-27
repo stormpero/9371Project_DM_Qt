@@ -521,7 +521,8 @@ compiler_rcc_make_all: qrc_resource.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_resource.cpp
 qrc_resource.cpp: ../Project_DM_Qt/resource.qrc \
-		E:/Programmes/Qt/5.14.1/mingw73_32/bin/rcc.exe
+		E:/Programmes/Qt/5.14.1/mingw73_32/bin/rcc.exe \
+		../Project_DM_Qt/img/??????_???????????\ ?????.png
 	E:\Programmes\Qt\5.14.1\mingw73_32\bin\rcc.exe -name resource ..\Project_DM_Qt\resource.qrc -o qrc_resource.cpp
 
 compiler_moc_predefs_make_all: moc_predefs.h
@@ -753,6 +754,7 @@ moc_project_dm_qt.cpp: ../Project_DM_Qt/project_dm_qt.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qtouchdevice.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qtabwidget.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qicon.h \
+		../Project_DM_Qt/natural.h \
 		moc_predefs.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/bin/moc.exe
 	E:\Programmes\Qt\5.14.1\mingw73_32\bin\moc.exe $(DEFINES) --include L:/9371Project_DM_Qt/build-Project_DM_Qt-Desktop_Qt_5_14_1_MinGW_32_bit-Debug/moc_predefs.h -IE:/Programmes/Qt/5.14.1/mingw73_32/mkspecs/win32-g++ -IL:/9371Project_DM_Qt/Project_DM_Qt -IE:/Programmes/Qt/5.14.1/mingw73_32/include -IE:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets -IE:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui -IE:/Programmes/Qt/5.14.1/mingw73_32/include/QtANGLE -IE:/Programmes/Qt/5.14.1/mingw73_32/include/QtCore -I. -IE:/Programmes/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IE:/Programmes/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IE:/Programmes/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IE:/Programmes/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IE:/Programmes/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IE:/Programmes/Qt/Tools/mingw730_32/i686-w64-mingw32/include ..\Project_DM_Qt\project_dm_qt.h -o moc_project_dm_qt.cpp
@@ -892,6 +894,7 @@ main.o: ../Project_DM_Qt/main.cpp ../Project_DM_Qt/project_dm_qt.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qtouchdevice.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qtabwidget.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qicon.h \
+		../Project_DM_Qt/natural.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QApplication \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qapplication.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtCore/qcoreapplication.h \
@@ -1009,7 +1012,23 @@ natural.o: ../Project_DM_Qt/natural.cpp ../Project_DM_Qt/natural.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qtouchdevice.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qtabwidget.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qicon.h \
-		ui_natural.h
+		ui_natural.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtCore/QVariant \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QApplication \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qapplication.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtCore/qcoreapplication.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtCore/qeventloop.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qguiapplication.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qinputmethod.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QMenuBar \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qmenubar.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qmenu.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qaction.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qactiongroup.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QStatusBar \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qstatusbar.h \
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o natural.o ..\Project_DM_Qt\natural.cpp
 
 project_dm_qt.o: ../Project_DM_Qt/project_dm_qt.cpp ../Project_DM_Qt/project_dm_qt.h \
@@ -1120,6 +1139,7 @@ project_dm_qt.o: ../Project_DM_Qt/project_dm_qt.cpp ../Project_DM_Qt/project_dm_
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qtouchdevice.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qtabwidget.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtGui/qicon.h \
+		../Project_DM_Qt/natural.h \
 		ui_project_dm_qt.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtCore/QVariant \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QAction \
@@ -1148,8 +1168,7 @@ project_dm_qt.o: ../Project_DM_Qt/project_dm_qt.cpp ../Project_DM_Qt/project_dm_
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qabstractbutton.h \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QStatusBar \
 		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/qstatusbar.h \
-		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QWidget \
-		../Project_DM_Qt/natural.h
+		E:/Programmes/Qt/5.14.1/mingw73_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o project_dm_qt.o ..\Project_DM_Qt\project_dm_qt.cpp
 
 qrc_resource.o: qrc_resource.cpp 

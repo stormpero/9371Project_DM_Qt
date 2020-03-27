@@ -15,6 +15,13 @@ public:
     explicit Natural(QWidget *parent = nullptr);
     ~Natural();
 
+signals:
+    void firstWindow();
+
+private slots:
+
+    void pushButton_natural();
+
 private:
     Ui::Natural *ui;
 };
