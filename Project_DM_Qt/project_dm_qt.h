@@ -2,6 +2,7 @@
 #define PROJECT_DM_QT_H
 
 #include <QMainWindow>
+#include <natural.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Project_DM_Qt; }
@@ -28,5 +29,6 @@ private slots:
 
 private:
     Ui::Project_DM_Qt *ui;
+    Natural *naturalwindow; //Окно
 };
 #endif // PROJECT_DM_QT_H

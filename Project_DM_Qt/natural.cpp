@@ -12,3 +12,9 @@ Natural::~Natural()
 {
     delete ui;
 }
+
+void Natural::pushButton_natural()
+{
+    this->close();
+    emit firstWindow();
+}
