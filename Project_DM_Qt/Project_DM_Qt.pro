@@ -17,15 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    natural.cpp \
     project_dm_qt.cpp
 
 HEADERS += \
-    natural.h \
     project_dm_qt.h
 
 FORMS += \
-    natural.ui \
     project_dm_qt.ui
 
 TRANSLATIONS += \
