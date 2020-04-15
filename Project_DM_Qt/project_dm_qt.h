@@ -2,7 +2,11 @@
 #define PROJECT_DM_QT_H
 
 #include <QMainWindow>
-//#include <QPushButton>
+//#include <QPropertyAnimation>
+//#include <QSequentialAnimationGroup>
+#include "Allfunc.h"
+#include "natural.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Project_DM_Qt; }
 QT_END_NAMESPACE
@@ -17,11 +21,11 @@ public:
 
 private slots:
 
-    void on_Btn_natural_clicked();
-
-    void on_Btn_integer_clicked();
+    void btn_click();    
+    void framehide();
 
 private:
-    Ui::Project_DM_Qt *ui;     
+    Ui::Project_DM_Qt *ui;
+
 };
 #endif // PROJECT_DM_QT_H

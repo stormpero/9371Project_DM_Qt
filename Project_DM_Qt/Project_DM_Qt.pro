@@ -17,9 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    natural.cpp \
     project_dm_qt.cpp
 
 HEADERS += \
+    Allfunc.h \
+    natural.h \
     project_dm_qt.h
 
 FORMS += \

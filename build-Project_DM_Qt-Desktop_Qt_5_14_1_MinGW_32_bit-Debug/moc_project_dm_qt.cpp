@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Project_DM_Qt_t {
     QByteArrayData data[4];
-    char stringdata0[61];
+    char stringdata0[35];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,13 +33,12 @@ struct qt_meta_stringdata_Project_DM_Qt_t {
 static const qt_meta_stringdata_Project_DM_Qt_t qt_meta_stringdata_Project_DM_Qt = {
     {
 QT_MOC_LITERAL(0, 0, 13), // "Project_DM_Qt"
-QT_MOC_LITERAL(1, 14, 22), // "on_Btn_natural_clicked"
-QT_MOC_LITERAL(2, 37, 0), // ""
-QT_MOC_LITERAL(3, 38, 22) // "on_Btn_integer_clicked"
+QT_MOC_LITERAL(1, 14, 9), // "btn_click"
+QT_MOC_LITERAL(2, 24, 0), // ""
+QT_MOC_LITERAL(3, 25, 9) // "framehide"
 
     },
-    "Project_DM_Qt\0on_Btn_natural_clicked\0"
-    "\0on_Btn_integer_clicked"
+    "Project_DM_Qt\0btn_click\0\0framehide"
 };
 #undef QT_MOC_LITERAL
 
@@ -73,8 +72,8 @@ void Project_DM_Qt::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         auto *_t = static_cast<Project_DM_Qt *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_Btn_natural_clicked(); break;
-        case 1: _t->on_Btn_integer_clicked(); break;
+        case 0: _t->btn_click(); break;
+        case 1: _t->framehide(); break;
         default: ;
         }
     }
