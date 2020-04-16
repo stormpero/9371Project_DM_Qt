@@ -40,9 +40,15 @@
      <rect>
       <x>0</x>
       <y>720</y>
-      <width>1101</width>
+      <width>1111</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -50,17 +56,17 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="Btn_natural">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="Btn_natural">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
 color: #000000;
 background-color: white;
 border: 1px solid #828282;
@@ -79,22 +85,22 @@ QPushButton:disabled {
 background-color: gray;
 color: white;
 }</string>
-     </property>
-     <property name="text">
-      <string>Натуральные числа N</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Btn_integer">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>10</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
+       </property>
+       <property name="text">
+        <string>Натуральные числа N</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Btn_integer">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
 color: #000000;
 background-color: white;
 border: 1px solid #828282;
@@ -113,22 +119,22 @@ QPushButton:disabled {
 background-color: gray;
 color: white;
 }</string>
-     </property>
-     <property name="text">
-      <string>Целые числа Z</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Btn_rational">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>10</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
+       </property>
+       <property name="text">
+        <string>Целые числа Z</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Btn_rational">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
 color: #000000;
 background-color: white;
 border: 1px solid #828282;
@@ -147,22 +153,22 @@ QPushButton:disabled {
 background-color: gray;
 color: white;
 }</string>
-     </property>
-     <property name="text">
-      <string>Рациональные числа Q</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Btn_polynomials">
-     <property name="geometry">
-      <rect>
-       <x>670</x>
-       <y>10</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
+       </property>
+       <property name="text">
+        <string>Рациональные числа Q</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Btn_polynomials">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
 color: #000000;
 background-color: white;
 border: 1px solid #828282;
@@ -181,22 +187,22 @@ QPushButton:disabled {
 background-color: gray;
 color: white;
 }</string>
-     </property>
-     <property name="text">
-      <string>Многочлены P</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Btn_matrix">
-     <property name="geometry">
-      <rect>
-       <x>890</x>
-       <y>10</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
+       </property>
+       <property name="text">
+        <string>Многочлены P</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Btn_matrix">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
 color: #000000;
 background-color: white;
 border: 1px solid #828282;
@@ -215,144 +221,76 @@ QPushButton:disabled {
 background-color: gray;
 color: white;
 }</string>
-     </property>
-     <property name="text">
-      <string>Матрицы M</string>
-     </property>
-     <property name="checkable">
-      <bool>false</bool>
-     </property>
-    </widget>
+       </property>
+       <property name="text">
+        <string>Матрицы M</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QWidget" name="widget_integer" native="true">
+   <widget class="QWidget" name="main" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1111</width>
-      <height>711</height>
+      <width>5550</width>
+      <height>721</height>
      </rect>
     </property>
-    <widget class="QLineEdit" name="lineEdit">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>390</y>
-       <width>81</width>
-       <height>51</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox">
-     <property name="geometry">
-      <rect>
-       <x>410</x>
-       <y>290</y>
-       <width>31</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <item>
-      <property name="text">
-       <string>+</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>-</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>*</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>/</string>
-      </property>
-     </item>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>220</y>
-       <width>81</width>
-       <height>51</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widget_natural" native="true">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1111</width>
-      <height>711</height>
-     </rect>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
-    <widget class="QLineEdit" name="lineEdit_6">
-     <property name="geometry">
-      <rect>
-       <x>310</x>
-       <y>280</y>
-       <width>81</width>
-       <height>51</height>
-      </rect>
+    <property name="minimumSize">
+     <size>
+      <width>5550</width>
+      <height>721</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>5550</width>
+      <height>721</height>
+     </size>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>0</number>
      </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_7">
-     <property name="geometry">
-      <rect>
-       <x>470</x>
-       <y>280</y>
-       <width>81</width>
-       <height>51</height>
-      </rect>
+     <property name="topMargin">
+      <number>0</number>
      </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_8">
-     <property name="geometry">
-      <rect>
-       <x>660</x>
-       <y>280</y>
-       <width>81</width>
-       <height>51</height>
-      </rect>
+     <property name="rightMargin">
+      <number>0</number>
      </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox_2">
-     <property name="geometry">
-      <rect>
-       <x>410</x>
-       <y>290</y>
-       <width>31</width>
-       <height>22</height>
-      </rect>
+     <property name="bottomMargin">
+      <number>0</number>
      </property>
-     <item>
-      <property name="text">
-       <string>+</string>
-      </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="1">
+      <widget class="QWidget" name="integer" native="true"/>
      </item>
-     <item>
-      <property name="text">
-       <string>-</string>
-      </property>
+     <item row="0" column="3">
+      <widget class="QWidget" name="polynomials" native="true"/>
      </item>
-     <item>
-      <property name="text">
-       <string>*</string>
-      </property>
+     <item row="0" column="2">
+      <widget class="QWidget" name="rational" native="true"/>
      </item>
-     <item>
-      <property name="text">
-       <string>/</string>
-      </property>
+     <item row="0" column="4">
+      <widget class="QWidget" name="matrix" native="true"/>
      </item>
-    </widget>
+     <item row="0" column="0">
+      <widget class="QWidget" name="natural" native="true"/>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

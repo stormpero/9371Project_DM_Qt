@@ -2,8 +2,6 @@
 #define PROJECT_DM_QT_H
 
 #include <QMainWindow>
-//#include <QPropertyAnimation>
-//#include <QSequentialAnimationGroup>
 #include "Allfunc.h"
 #include "natural.h"
 
@@ -21,8 +19,13 @@ public:
 
 private slots:
 
-    void btn_click();    
-    void framehide();
+    // Main buttons slots //
+    void on_Btn_natural_clicked();
+    void on_Btn_integer_clicked();
+    void on_Btn_rational_clicked();
+    void on_Btn_polynomials_clicked();
+    void on_Btn_matrix_clicked();
+    //\/////////////////////
 
 private:
     Ui::Project_DM_Qt *ui;
