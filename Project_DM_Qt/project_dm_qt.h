@@ -2,7 +2,8 @@
 #define PROJECT_DM_QT_H
 
 #include <QMainWindow>
-#include <natural.h>
+#include "Allfunc.h"
+#include "natural.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Project_DM_Qt; }
@@ -17,18 +18,17 @@ public:
     ~Project_DM_Qt();
 
 private slots:
-    void on_pushButton_natural_clicked();
 
-    void on_pushButton_integer_clicked();
-
-    void on_pushButton_rational_clicked();
-
-    void on_pushButton_polynomials_clicked();
-
-    void on_pushButton_matrix_clicked();
+    // Main buttons slots //
+    void on_Btn_natural_clicked();
+    void on_Btn_integer_clicked();
+    void on_Btn_rational_clicked();
+    void on_Btn_polynomials_clicked();
+    void on_Btn_matrix_clicked();
+    //\/////////////////////
 
 private:
     Ui::Project_DM_Qt *ui;
-    Natural *naturalwindow; //Окно
+
 };
 #endif // PROJECT_DM_QT_H

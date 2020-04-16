@@ -21,11 +21,11 @@ SOURCES += \
     project_dm_qt.cpp
 
 HEADERS += \
+    Allfunc.h \
     natural.h \
     project_dm_qt.h
 
 FORMS += \
-    natural.ui \
     project_dm_qt.ui
 
 TRANSLATIONS += \
